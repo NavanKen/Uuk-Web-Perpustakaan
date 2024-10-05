@@ -1,0 +1,491 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --primarycolor: #f4f4f4;
+  --secondcolor: #18181b;
+  --thirdcolor: #d8d2c2;
+  --blue: #4379f2;
+  --darkblue: #1230ae;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--primarycolor);
+}
+
+/* Header */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--secondcolor);
+  padding: 2rem 8rem;
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  z-index: 999;
+  width: 100%;
+}
+
+.logo {
+  color: gold;
+  font-size: 1.4rem;
+  font-family: "Poppins", system-ui;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li a {
+  padding: 20px;
+  color: white;
+  transition: 0.1s;
+}
+
+.menu li i {
+  color: white;
+}
+
+menu li i:hover {
+  color: gold;
+}
+.menu li a:hover {
+  color: gold;
+}
+/* Header End */
+
+/* Landing Page */
+
+.landing-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/perpus.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.landing-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(0, 0, 0, 0.4);
+}
+
+.landing-page::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  bottom: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(1, 1, 3, 1) 3%,
+    rgba(255, 255, 255, 0) 25%
+  );
+}
+
+.text {
+  color: white;
+  z-index: 1;
+  padding: 0 5rem;
+  text-align: center;
+}
+
+.text h2 {
+  font-family: "Poppins", system-ui;
+  font-weight: 600;
+  font-style: normal;
+  color: var(--primarycolor);
+  font-size: 60px;
+}
+
+.text p {
+  padding-bottom: 30px;
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.button {
+  color: white;
+  background-color: rgb(0, 85, 255);
+  padding: 10px 15px;
+  border-radius: 10px;
+  border-radius: 10px;
+  box-shadow: none;
+  border: none;
+  transition: 0.1s ease-in-out;
+  cursor: pointer;
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: var(--darkblue);
+}
+/* Landing End */
+
+.buku {
+  background: linear-gradient(black 1px, var(--secondcolor));
+  height: 100%;
+  padding: 8rem 2% 1.4rem;
+  text-align: center;
+}
+
+.buku h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-family: "Poppins", system-ui;
+  font-weight: 600;
+  font-style: normal;
+  color: white;
+}
+
+.buku-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #4a4947;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 360px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  height: 350px;
+}
+
+.card h3 {
+  color: var(--primarycolor);
+  margin-top: 15px;
+  font-size: 1.5rem;
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.card p {
+  color: var(--thirdcolor);
+  font-size: 1rem;
+  margin-top: 10px;
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
+  background-color: var(--secondcolor);
+}
+
+.kotak {
+  width: 100%;
+  display: flex;
+}
+
+.lengkap {
+  width: 30%;
+  margin: 2rem 3rem;
+  font-family: "Poppins", system-ui;
+  font-weight: 500;
+  font-style: normal;
+  cursor: pointer;
+  font-size: 1.4rem;
+  color: var(--blue);
+  transition: 0.3s;
+  justify-content: right;
+}
+
+.lengkap:hover {
+  color: var(--darkblue);
+}
+
+/* Contact */
+
+.contact {
+  padding: 8rem 2% 1.4rem;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #1e201e;
+}
+
+.contact-container {
+  background-color: var(--secondcolor);
+  border-radius: 20px;
+  padding: 3em 0;
+}
+
+.contact h2 {
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #ededee;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.input-field {
+  margin: 18px;
+}
+
+.contact form {
+  text-align: center;
+  width: 600px;
+}
+
+.input-field .item {
+  width: 400px;
+  padding: 18px;
+  background: transparent;
+  border: 2px solid #0ef;
+  border-radius: 6px;
+  color: white;
+}
+
+.input-field .item::placeholder {
+  color: white;
+}
+
+form textarea {
+  resize: none;
+}
+
+form button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #333;
+  background-color: #0ef;
+  width: 25%;
+  height: 40px;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 1s ease-in-out;
+  border: none;
+}
+
+form button:hover {
+  background-color: #09c;
+}
+
+.input-field select.item {
+  background-color: var(--secondcolor);
+  border: 2px solid #0ef;
+  color: white;
+  padding: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* .input-field select.item option:hover,
+.input-field select.item option:checked {
+  color: white;
+} */
+
+/* Contact End */
+
+/* layanan */
+.layanan-section {
+  padding: 50px;
+  text-align: center;
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--secondcolor);
+  height: 100vh;
+  padding: 8rem 2% 1.4rem;
+}
+.layanan-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: white;
+}
+.layanan-table {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: #333333;
+}
+
+.layanan-table th,
+.layanan-table td {
+  padding: 15px;
+  text-align: left;
+  border: 1px solid var(--secondcolor);
+  color: var(--primarycolor);
+}
+
+.layanan-table th {
+  background-color: #001f3f;
+  color: var(--primarycolor);
+}
+
+.layanan-table tr:hover {
+  background-color: #1e201e;
+}
+
+.layanan-table td {
+  font-size: 1rem;
+}
+/* layanan end */
+
+/* List Buku */
+.list-buku {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/perpus.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  height: 250px;
+  padding: 8rem 2% 1.4rem;
+}
+
+.list-text {
+  text-align: center;
+  color: white;
+  z-index: 2;
+}
+
+.list-buku::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.list-text h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  margin: 0;
+}
+
+.buku-list {
+  background: linear-gradient(black 1px, var(--secondcolor));
+  height: 100%;
+  padding: 8rem 2% 8rem;
+  text-align: center;
+}
+
+.pemilihan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pinjam {
+  color: gold;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0;
+  transition: 0.3s;
+  font-size: 20px;
+}
+.harga {
+  padding-bottom: 30px;
+  padding-top: 30px;
+  color: tomato;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0;
+  transition: 0.3s;
+  font-size: 25px;
+}
+
+.pinjam:hover {
+  color: goldenrod;
+}
+
+.harga:hover {
+  color: orangered;
+}
+
+/* List Buku End */
+
+/* Thanks */
+.thanks {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 40px;
+  background-color: var(--secondcolor);
+}
+
+.thanks i {
+  color: var(--primarycolor);
+  font-size: 80px;
+  padding-bottom: 30px;
+}
+
+.thanks h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: var(--primarycolor);
+}
+
+.thanks p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--primarycolor);
+}

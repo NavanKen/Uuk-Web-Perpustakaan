@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bookshelf</title>
+    <link rel="icon" href="img/bookshelf.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-container">
+          <a class="logo" href="index.html">Bookshelf</a>
+          <ul class="menu">
+            <li><i class="fa-solid fa-house"></i><a href="#home">Home</a></li>
+            <li>
+              <i class="fa-solid fa-book"></i><a href="#buku">Daftar Buku</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-address-book"></i
+              ><a href="page/contact.html">Contact</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-gear"></i
+              ><a href="page/table.html">Layanan</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="landing-page" id="home">
+      <div class="text">
+        <h2>Selamat Datang di Perpustakaan Kami</h2>
+        <p>
+          Temukan beberapa buku dan sumber daya untuk meningkatkan pengetahuan
+          dan keterampilan Anda. Perpustakaan kami menyediakan berbagai koleksi
+          buku, jurnal, dan artikel dari berbagai disiplin ilmu.
+        </p>
+        <a class="button" href="#buku">lihat buku</a>
+      </div>
+    </section>
+    <section class="buku" id="buku">
+      <h2>Daftar Buku</h2>
+      <div class="buku-container">
+        <div class="card">
+          <img src="img/book-cover/cover javascript.jpg" alt="JavaScript" />
+          <h3>Jago JavaScript</h3>
+          <div class="pemilihan">
+            <a class="harga" href="page/terimakasih.html"
+              >Beli Seharga 14.000</a
+            >
+            <a class="pinjam" href="page/pinjam.html">Pinjam</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/book-cover/machie-learning cover.jpg" alt="" />
+          <h3>Belajar Machine Learning</h3>
+          <div class="pemilihan">
+            <a class="harga" href="page/terimakasih.html"
+              >Beli Seharga 300.000</a
+            >
+            <a class="pinjam" href="page/pinjam.html">Pinjam</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/book-cover/NextJs-Cover.jpg" alt="NextJs" />
+          <h3>The Ultimate NextJs Ebook</h3>
+          <div class="pemilihan">
+            <a class="harga" href="page/terimakasih.html"
+              >Beli Seharga 20.000</a
+            >
+
+            <a class="pinjam" href="page/pinjam.html">Pinjam</a>
+          </div>
+        </div>
+
+        <div class="kotak">
+          <a class="lengkap" href="page/booklist.html"
+            >Lihat Buku yang menarik lainnya > >
+          </a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
