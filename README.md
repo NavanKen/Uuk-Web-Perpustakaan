@@ -1,5 +1,5 @@
 ID
 web ini belum responsif
 
-ENGT
-his website is still not responsive
+ENG
+This website is still not responsive
